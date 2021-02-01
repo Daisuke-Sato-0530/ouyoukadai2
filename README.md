@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+完成
+
+26. 他ユーザーのプロフィールを編集できないようにする
+ensure_correct_userメソッドのbefore_actionにあるアクションを追加してあげる必要があります。
+
+↑これやってない
+
+updateに
+
+if @user.id == current_user.id
+else
+redirect_to user_path(current_user)
+end
+
+の記述をした。
