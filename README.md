@@ -39,3 +39,7 @@ redirect_to user_path(current_user)
 end
 
 の記述をした。
+
+
+コメント機能のコントローラー
+createの記述意味不明
