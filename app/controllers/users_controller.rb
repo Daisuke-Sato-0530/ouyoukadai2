@@ -28,6 +28,12 @@ class UsersController < ApplicationController
       render "edit"
     end
   end
+  
+  def followerview
+    @user = User.find(params[:id])
+    @books = @user.books
+    @book = Book.new
+  end 
 
   private
   def user_params
